@@ -1,42 +1,60 @@
+**.orig
+**.swp
+**.war
+*.bowerrc
 *.rbc
-capybara-*.html
+*.sassc
+.coveralls.yml
+.DS_Store
+.env
+.idea
+.powenv
+.redcar/
 .rspec
-/log
-/tmp
+.rvmrc
+.sass-cache
+/*.tmproj
+/.bundle
+/.vagrant
+/cache
+/capybara*
+/capybara-*.html
+/config/application.yml
+/config/config.yml
+/config/database.yml
+/config/secrets.yml
+/coverage.data
+/coverage/
+/db/*.javadb/
 /db/*.sqlite3
 /db/*.sqlite3-journal
+/doc/api/
+/doc/app/
+/doc/features.html
+/doc/specs.html
+/gems
+/log
+/log/*
+/nbproject/
+/public/assets
+/public/cache
+/public/stylesheets/compiled
 /public/system
-/coverage/
+/public/system/*
+/server/phantomjs
 /spec/tmp
-**.orig
-rerun.txt
-pickle-email-*.html
-
-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+/spec/tmp/*
+/specifications
+/tmp
+/tmp/*
+/vendor/assets/bower_components
+/vendor/bundle
+/vendor/bundle/
+/vendor/ruby/
+bower.json
+capybara-*.html
 config/initializers/secret_token.rb
 config/secrets.yml
-.env
-
-## Environment normalization:
-/.bundle
-/vendor/bundle
-
-# these should all be checked in to normalize the environment:
-# Gemfile.lock, .ruby-version, .ruby-gemset
-
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
-
-# if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
-*.bowerrc
-bower.json
-
-# Ignore pow environment settings
-.powenv
-
-# Mac finder artifacts
-.DS_Store
-
-# vagrant status
-/.vagrant
+db/*.sqlite3
+pickle-email-*.html
+rerun.txt
