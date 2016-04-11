@@ -33,3 +33,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# Mac finder artifacts
+.DS_Store
