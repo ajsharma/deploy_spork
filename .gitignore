@@ -37,3 +37,6 @@ bower.json
 
 # Mac finder artifacts
 .DS_Store
+
+# vagrant status
+/.vagrant
