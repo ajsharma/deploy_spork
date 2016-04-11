@@ -19,7 +19,7 @@ development:
   database: deploy_spork_development
   pool:     5
   username: vagrant
-  password: 
+  password: password
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -47,15 +47,13 @@ test:
   database: deploy_spork_test
   pool:     5
   username: vagrant
-  password: 
+  password: password
   template: template0
 
 production:
   adapter:  postgresql
-  host:     localhost
   encoding: unicode
   database: deploy_spork_production
   pool:     5
   username: vagrant
-  password: 
   template: template0

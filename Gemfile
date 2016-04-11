@@ -1,27 +1,24 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
-gem 'rails', '4.2.6'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-group :development, :test do
-  gem 'byebug'
-end
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
+
 gem 'bootstrap-sass'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'high_voltage'
+gem 'jbuilder', '~> 2.0'
+gem 'jquery-rails'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'pg'
 gem 'pundit'
+gem 'rails', '4.2.6'
+gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
+gem 'turbolinks'
+gem 'uglifier', '>= 1.3.0'
+
 group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'better_errors'
   gem 'foreman'
   gem 'guard-bundler'
@@ -34,7 +31,9 @@ group :development do
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
 end
+
 group :development, :test do
+  gem 'byebug'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'pry-rails'
@@ -42,10 +41,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
 end
+
 group :production do
   gem 'puma'
   gem 'rails_12factor'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
