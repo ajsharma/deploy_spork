@@ -46,8 +46,6 @@ test:
   encoding: unicode
   database: deploy_spork_test
   pool:     5
-  username: vagrant
-  password: password
   template: template0
 
 production:
