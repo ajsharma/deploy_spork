@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.3.0
+before_script:
+- psql -c 'create database deploy_spork_test;' -U postgres
+- bundle exec rake db:test:load
+bundler_args: --without development
+addons:
+  postgresql: 9.3
+sudo: false
