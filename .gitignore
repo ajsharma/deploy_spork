@@ -10,7 +10,6 @@
 .idea
 .powenv
 .redcar/
-.rspec
 .rvmrc
 .sass-cache
 /*.tmproj
