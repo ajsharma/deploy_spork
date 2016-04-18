@@ -1,3 +1,5 @@
+# Be sure to restart your server when you modify this file.
+
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
   # Wrappers are used by the form builder to generate a
