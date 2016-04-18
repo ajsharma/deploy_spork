@@ -18,10 +18,6 @@
 /cache
 /capybara*
 /capybara-*.html
-/config/application.yml
-/config/config.yml
-/config/database.yml
-/config/secrets.yml
 /coverage.data
 /coverage/
 /db/*.javadb/
@@ -52,8 +48,6 @@
 /vendor/ruby/
 bower.json
 capybara-*.html
-config/initializers/secret_token.rb
-config/secrets.yml
 db/*.sqlite3
 pickle-email-*.html
 rerun.txt
