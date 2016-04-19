@@ -13,5 +13,4 @@ describe SessionPolicy do
   #     expect(UserPolicy).to permit(admin)
   #   end
   # end
-
 end
