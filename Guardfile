@@ -38,7 +38,8 @@ end
 # changes server environment.
 # environment: 'development'
 
-# kills any process that's holding the listen port before attempting to (re)start Rails.
+# kills any process that's holding the listen port before
+# attempting to (re)start Rails.
 # force_run: false
 
 # specify your pid_file.
