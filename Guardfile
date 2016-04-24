@@ -28,20 +28,48 @@ guard :bundler do
 end
 
 # Guard-Rails supports a lot options with default values:
-# daemon: false                        # runs the server as a daemon.
-# debugger: false                      # enable ruby-debug gem.
-# environment: 'development'           # changes server environment.
-# force_run: false                     # kills any process that's holding the listen port before attempting to (re)start Rails.
-# pid_file: 'tmp/pids/[RAILS_ENV].pid' # specify your pid_file.
-# host: 'localhost'                    # server hostname.
-# port: 3000                           # server port number.
-# root: '/spec/dummy'                  # Rails' root path.
-# server: thin                         # webserver engine.
-# start_on_start: true                 # will start the server when starting Guard.
-# timeout: 30                          # waits untill restarting the Rails server, in seconds.
-# zeus_plan: server                    # custom plan in zeus, only works with `zeus: true`.
-# zeus: false                          # enables zeus gem.
-# CLI: 'rails server'                  # customizes runner command. Omits all options except `pid_file`!
+
+# runs the server as a daemon.
+# daemon: false
+
+# enable ruby-debug gem.
+# debugger: false
+
+# changes server environment.
+# environment: 'development'
+
+# kills any process that's holding the listen port before attempting to (re)start Rails.
+# force_run: false
+
+# specify your pid_file.
+# pid_file: 'tmp/pids/[RAILS_ENV].pid'
+
+# server hostname.
+# host: 'localhost'
+
+# server port number.
+# port: 3000
+
+# Rails' root path.
+# root: '/spec/dummy'
+
+# webserver engine.
+# server: thin
+
+# will start the server when starting Guard.
+# start_on_start: true
+
+# waits untill restarting the Rails server, in seconds.
+# timeout: 30
+
+# custom plan in zeus, only works with `zeus: true`.
+# zeus_plan: server
+
+# enables zeus gem.
+# zeus: false
+
+# customizes runner command. Omits all options except `pid_file`!
+# CLI: 'rails server'
 
 guard "rails" do
   watch("Gemfile.lock")

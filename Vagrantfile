@@ -42,7 +42,8 @@ Vagrant.configure("2") do |config|
   # X11 forwarding over SSH connections is enabled. Defaults to false.
   config.ssh.forward_x11 = true
 
-  # custom fix for "stdin: is not a tty" error (https://github.com/mitchellh/vagrant/issues/1673)
+  # custom fix for "stdin: is not a tty" error
+  # (https://github.com/mitchellh/vagrant/issues/1673)
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   # Share an additional folder to the guest VM. The first argument is
@@ -67,7 +68,9 @@ Vagrant.configure("2") do |config|
     elsif host =~ /linux/
       cpus = `nproc`.to_i
       # meminfo shows KB and we need to convert to MB
-      mem = `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`.to_i / 1024 / 4
+      mem =
+        `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`
+        .to_i / 1024 / 4
     else # sorry Windows folks, I can't help you
       cpus = 2
       mem = 1024
