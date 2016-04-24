@@ -1,4 +1,5 @@
-# thanks to Jonathon Wolfe at http://reed.github.io/turbolinks-compatibility/google_analytics.html
+# thanks to Jonathon Wolfe at
+# http://reed.github.io/turbolinks-compatibility/google_analytics.html
 
 class @GoogleAnalytics
 
