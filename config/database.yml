@@ -45,10 +45,12 @@ test:
   database: deploy_spork_test
   encoding: unicode
   host:     localhost
+  password: password
   pool:     5
   template: template0
+  username: vagrant
 
-
+# Production on heroku uses ENV['DATABASE_URL'] for credentials
 production:
   adapter:  postgresql
   database: deploy_spork_production
