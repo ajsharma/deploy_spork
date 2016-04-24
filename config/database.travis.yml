@@ -1,0 +1,10 @@
+# Custom database setup for CI (Travis in this case)
+test:
+  adapter:  postgresql
+  database: deploy_spork_test
+  encoding: unicode
+  host:     localhost
+  # password: password
+  pool:     5
+  template: template0
+  # username: vagrant
