@@ -7,6 +7,8 @@ A simple Rails app for passing along Heroku deploy notifications to 3rd parties
 
 [![codecov](https://codecov.io/gh/ajsharma/deploy_spork/branch/master/graph/badge.svg)](https://codecov.io/gh/ajsharma/deploy_spork)
 
+[![Dependency Status](https://gemnasium.com/badges/github.com/ajsharma/deploy_spork.svg)](https://gemnasium.com/github.com/ajsharma/deploy_spork)
+
 ## Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
