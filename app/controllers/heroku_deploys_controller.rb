@@ -2,10 +2,9 @@
 # See https://devcenter.heroku.com/articles/deploy-hooks#customizing-messages
 # for more details
 class HerokuDeploysController < ApplicationController
-
   # TODO
   # before_action :verify_incoming_request_is_from_heroku
-  skip_before_filter :verify_authenticity_token, only: [:create]
+  skip_before_action :verify_authenticity_token, only: [:create]
 
   # POST /heroku_deploys
   def create
