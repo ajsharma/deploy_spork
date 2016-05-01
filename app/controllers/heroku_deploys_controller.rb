@@ -7,6 +7,7 @@ class HerokuDeploysController < ApplicationController
   # before_action :verify_incoming_request_is_from_heroku
   skip_before_filter :verify_authenticity_token, only: [:create]
 
+  # POST /heroku_deploys
   def create
     Rails.logger.debug request.inspect
 
