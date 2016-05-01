@@ -89,8 +89,6 @@ GEM
       railties (>= 3.0.0)
     faker (1.6.3)
       i18n (~> 0.5)
-    faraday (0.9.2)
-      multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
     foreman (0.78.0)
       thor (~> 0.19.1)
@@ -119,7 +117,6 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     hashdiff (0.3.0)
-    hashie (3.4.3)
     high_voltage (2.4.0)
     httparty (0.13.7)
       json (~> 1.8)
@@ -134,7 +131,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
-    jwt (1.5.1)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.0.6)
@@ -153,28 +149,12 @@ GEM
     minitest (5.8.4)
     multi_json (1.11.2)
     multi_xml (0.5.5)
-    multipart-post (2.0.0)
     nenv (0.3.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    oauth2 (1.1.0)
-      faraday (>= 0.8, < 0.10)
-      jwt (~> 1.0, < 1.5.2)
-      multi_json (~> 1.3)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 3)
-    omniauth (1.3.1)
-      hashie (>= 1.2, < 4)
-      rack (>= 1.0, < 3)
-    omniauth-github (1.1.2)
-      omniauth (~> 1.0)
-      omniauth-oauth2 (~> 1.1)
-    omniauth-oauth2 (1.4.0)
-      oauth2 (~> 1.0)
-      omniauth (~> 1.2)
     parser (2.3.0.7)
       ast (~> 2.2)
     pg (0.18.4)
@@ -218,7 +198,6 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_layout (1.0.29)
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
     railties (4.2.6)
@@ -341,8 +320,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  omniauth
-  omniauth-github
   pg
   pry-rails
   pry-rescue
@@ -351,7 +328,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.6)
   rails_12factor
-  rails_layout
   rb-fchange
   rb-fsevent
   rb-inotify
@@ -368,5 +344,8 @@ DEPENDENCIES
   web-console (~> 2.0)
   webmock
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.1
