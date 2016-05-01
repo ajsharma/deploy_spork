@@ -7,8 +7,6 @@ gem 'high_voltage'
 gem 'httparty'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
-gem 'omniauth'
-gem 'omniauth-github'
 gem 'pg'
 gem 'pundit'
 gem 'rails', '4.2.6'
@@ -26,10 +24,9 @@ group :development do
   gem 'guard-rails'
   gem 'guard-rspec'
   gem 'quiet_assets'
-  gem 'rails_layout'
-  gem 'rb-fchange', :require=>false
-  gem 'rb-fsevent', :require=>false
-  gem 'rb-inotify', :require=>false
+  gem 'rb-fchange', require: false
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
   gem 'spring-commands-rspec'
 end
 
