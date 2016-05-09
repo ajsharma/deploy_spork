@@ -1,0 +1,2 @@
+module HerokuDeploysHelper
+end
