@@ -1,5 +1,3 @@
-require "rails_helper"
-
 RSpec.describe HerokuDeploysController do
   describe "routing" do
     it "routes to #create" do
