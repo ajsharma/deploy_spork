@@ -1,16 +1,26 @@
 {
   "name": "Deploy Spork",
   "description": "A simple Rails app for passing along Heroku deploy notifications to 3rd parties",
-  "repository": "https://github.com/ajsharma/deploy_spork",
   "keywords": [
     "deploys",
     "heroku",
-    "notifications",
+    "notifications"
   ],
+  "website": "https://github.com/ajsharma/deploy_spork",
+  "repository": "https://github.com/ajsharma/deploy_spork",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "success_url": "/",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate; bundle exec rake db:seed"
   },
   "env": {
-    "RAILS_ENV": "production"
+    "DOMAIN_NAME": {
+      "description": "A url for the application.",
+    },
+    "RAILS_ENV": "production",
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    }
   }
 }
