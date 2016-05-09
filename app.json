@@ -15,7 +15,7 @@
   },
   "env": {
     "DOMAIN_NAME": {
-      "description": "A url for the application.",
+      "description": "A url for the application."
     },
     "RAILS_ENV": "production",
     "SECRET_TOKEN": {
