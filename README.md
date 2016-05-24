@@ -1,5 +1,5 @@
 # deploy_spork
-A simple Rails app for passing along Heroku deploy notifications to 3rd parties
+A simple Rails app for passing along Heroku deploy notifications to 3rd parties. Currently a work in progress (as in, it doesn't work yet).
 
 ## Code Statistics
 
